@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Shimpi | Cybersecurity & AI Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Animated background gradient for hero section */
+        .animated-gradient-bg {
+            background: linear-gradient(120deg, #1ABC9C, #667EEA, #16D9E3, #1ABC9C);
+            background-size: 200% 200%;
+            animation: gradientMove 6s ease-in-out infinite;
+        }
+        @keyframes gradientMove {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* 1. Subtle Noise / Texture Background (Modern Trend) */
+        .subtle-noise-bg {
+            background-color: #1E1E2F;
+            color: #EDEDED;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.02' numOctaves='2' stitchTiles='stitch' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05' /%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+
+        /* 2. Soft Gradient but Fixed (No Animation) */
+        .soft-gradient-bg {
+            background: linear-gradient(135deg, #1E1E2F 0%, #2A2A40 100%);
+            color: #EDEDED;
+        }
+
+        /* 3. Optional Very Gentle Animation (Barely Moving) */
+        .subtle-gradient-bg {
+            background: linear-gradient(135deg, #1E1E2F, #2A2A40);
+            background-size: 150% 150%;
+            animation: slowGradient 30s ease infinite;
+            color: #EDEDED;
+        }
+        @keyframes slowGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Glowing border effect for buttons and cards */
+        .glow-hover {
+            transition: box-shadow 0.3s, border-color 0.3s;
+        }
+        .glow-hover:hover, .glow-hover:focus {
+            border-color: #1ABC9C !important;
+            box-shadow: 0 0 16px 2px #1ABC9C55;
+        }
+    </style>
+</head>
+
+
+<body class="bg-[#14181F] text-[#F5F6FA] scroll-smooth">
+    <header class="sticky top-0 bg-[#14181F] py-5 px-6 md:px-10 border-b border-[#1ABC9C] z-50 shadow-md shadow-[#1abc9c1a]/10">
+    <div class="flex flex-col md:flex-row md:justify-between items-center w-full">
+        <h1 class="text-xl md:text-2xl font-bold text-[#1ABC9C] tracking-wide text-center md:text-left w-full md:w-auto mb-3 md:mb-0">
+            Raj Shimpi
+        </h1>
+        <nav class="flex flex-row gap-4 md:gap-8 text-base items-center">
+            <a href="#about" class="relative transition-colors duration-200 text-[#F5F6FA] hover:text-[#1ABC9C] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#1ABC9C] after:transition-all after:duration-300 hover:after:w-full">About</a>
+            <a href="#projects" class="relative transition-colors duration-200 text-[#F5F6FA] hover:text-[#1ABC9C] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#1ABC9C] after:transition-all after:duration-300 hover:after:w-full">Projects</a>
+            <a href="#certifications" class="relative transition-colors duration-200 text-[#F5F6FA] hover:text-[#1ABC9C] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#1ABC9C] after:transition-all after:duration-300 hover:after:w-full">Certifications</a>
+            <a href="#contact" class="relative transition-colors duration-200 text-[#F5F6FA] hover:text-[#1ABC9C] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#1ABC9C] after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+        </nav>
+    </div>
+</header>
+
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4 pt-10 opacity-0 translate-y-8 transition-opacity transition-transform duration-1000 will-change-transform hero-fade-in subtle-noise-bg">
+        <div class="flex flex-col items-center">
+            <img src="assets/raj-profile.jpg" alt="Raj Shimpi" class="w-40 h-40 rounded-full mb-6 shadow-lg border-4 border-[#1ABC9C] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Computer Engineer | Cybersecurity </h2>
+            <p class="text-lg text-[#6EE7B7] font-semibold mb-2">NBNSTIC</p>
+            <p class="text-[#B0B7C3] mb-6 max-w-xl">Driven by curiosity, passion, and a commitment to meaningful technology solutions through cybersecurity and AI.</p>
+            <a href="#projects" class="px-6 py-2 bg-gradient-to-r from-[#1ABC9C] via-[#16D9E3] to-[#667EEA] text-[#14181F] rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:text-white focus:outline-none focus:ring-4 focus:ring-[#1ABC9C]/50 hover:bg-[length:200%_200%] bg-[length:100%_100%] hover:bg-gradient-to-l hover:from-[#667EEA] hover:via-[#1ABC9C] hover:to-[#16D9E3] border-2 border-transparent glow-hover">View Projects</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 px-8 max-w-5xl mx-auto">
+        <h3 class="text-3xl font-semibold mb-4 text-[#1ABC9C]">About Me</h3>
+        <p class="text-[#B0B7C3] leading-relaxed opacity-0 translate-y-8 transition-opacity transition-transform duration-700 will-change-transform fade-in-on-scroll">
+            I am a Computer Engineering student from India driven by a strong passion for cybersecurity, artificial intelligence, and developing impactful technology solutions. I enjoy working on real-world projects such as AI-powered PDF chatbots and password security tools that combine innovation with practical usability.
+            <br><br>
+            With a solid technical foundation and a curiosity for emerging technologies, I thrive in collaborative environments and am eager to tackle complex problems. My goal is to continuously learn and contribute to meaningful projects, bringing enthusiasm and commitment to every opportunity—especially in internship roles and team-driven tech ventures.
+        </p>
+    </section>
+
+    <section id="projects" class="py-16 px-8 max-w-5xl mx-auto">
+        <h3 class="text-3xl font-semibold mb-4 text-[#1ABC9C]">Projects</h3>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="relative group p-8 bg-[#1A1F2B] rounded-lg shadow-lg hover:scale-105 transition">
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="px-2 py-1 bg-[#1ABC9C] text-[#14181F] text-xs rounded shadow">
+                        Featured
+                    </span>
+                </div>
+                <h4 class="text-xl font-bold mb-4">AI PDF Chatbot for Students</h4>
+                <p class="text-[#B0B7C3] text-base leading-relaxed">
+                    Developed an interactive AI chatbot that enables students to query academic PDFs for instant answers and summaries. Built using Python, LangChain, FAISS, and GPT models, this tool automates content extraction and Q&A functionality.
+                </p>
+                <p class="mt-4 text-sm text-[#6EE7B7]">Python • LangChain • FAISS • GPT</p>
+            </div>
+            <div class="relative group p-8 bg-[#1A1F2B] rounded-lg shadow-lg hover:scale-105 transition">
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="px-2 py-1 bg-[#1ABC9C] text-[#14181F] text-xs rounded shadow">
+                        Featured
+                    </span>
+                </div>
+                <h4 class="text-xl font-bold mb-4">Password Protection Awareness Tool (Secure Pass)</h4>
+                <p class="text-[#B0B7C3] text-base leading-relaxed">
+                    Created a Python-based tool to educate users on best practices for strong password management. Evaluates password strength, highlights vulnerabilities, and provides actionable security tips.
+                </p>
+                <p class="mt-4 text-sm text-[#6EE7B7]">
+                    <a href="https://securepass-dashboard.onrender.com" target="_blank" class="underline hover:text-[#A5B4FC] transition">🔗 Live Demo: Secure Pass</a>
+                </p>
+                <p class="mt-4 text-sm text-[#6EE7B7]">Python • Security • Awareness</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="py-16 px-8 max-w-5xl mx-auto">
+        <h3 class="text-3xl font-semibold mb-4 text-[#1ABC9C]">Certifications</h3>
+        <ul class="list-disc list-inside text-[#B0B7C3] opacity-0 translate-y-8 transition-opacity transition-transform duration-700 will-change-transform fade-in-on-scroll">
+            <li>Cyber Job Simulation – Forage (Deloitte, June 2025)</li>
+            <li>Python & Django REST API Bootcamp – Udemy</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="py-16 px-8 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-4 text-[#1ABC9C]">Contact</h3>
+    <p class="text-[#B0B7C3] mb-4">Let’s connect for projects, internships, or tech discussions.</p>
+
+    <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+        <a href="https://www.linkedin.com/in/raj-shimpi-a224b6213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+           class="flex items-center gap-2 transition-all duration-300 transform hover:scale-110 hover:text-[#1ABC9C] focus:outline-none border-2 border-transparent rounded-lg glow-hover">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Rajshimpi2706" 
+           class="flex items-center gap-2 transition-all duration-300 transform hover:scale-110 hover:text-[#1ABC9C] focus:outline-none border-2 border-transparent rounded-lg glow-hover">
+            <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="https://www.instagram.com/raj_27_06?igsh=MWtodjlxcTd0NTY0cA==" 
+           class="flex items-center gap-2 transition-all duration-300 transform hover:scale-110 hover:text-[#1ABC9C] focus:outline-none border-2 border-transparent rounded-lg glow-hover">
+            <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="mailto:shimpiraj27@gmail.com" 
+           class="flex items-center gap-2 transition-all duration-300 transform hover:scale-110 hover:text-[#1ABC9C] focus:outline-none border-2 border-transparent rounded-lg glow-hover">
+            <i class="bi bi-envelope"></i> Email
+        </a>
+    </div>
+</section>
+
+
+    <footer class="py-4 text-center text-xs text-[#B0B7C3] border-t border-[#1ABC9C]">
+        © 2025 Raj Shimpi. All rights reserved.
+    <script src="scrip.js"></script>
+    </footer>
+</body>
+
+</html>
